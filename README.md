@@ -18,3 +18,20 @@ When we examine the results of the balanced accuracy scores and the precision an
   * The balanced accuracy score is about 64%. 
   * The high_risk precision is only 1% with a sensitivity of 62%, which makes an F1 of 2%.
   * Due to the high number of low_risk populations, its precision is 100% with a sensitivity of 67%.
+
+
+### SMOTE Oversampling
+  * Our results for this method are similar to the Naive Random Oversampling method.
+  * The balanced accuracy score is about 65%
+  * The high_risk precision is about 1% only with 66% sensitivity which makes a F1 of 2% only.
+  * Due to the high number of low_risk populations, its precision is almost 100% with a sensitivity of 64%.
+
+### Cluster Centroid Undersampling
+  * The balanced accuracy score is down to about 51%.
+  * The high_risk precision is still 1% only with 59% sensitivity which makes a F1 of 1%.
+  * Due to the high number of false positives, the low_risk sensitivity is only 43%.
+
+### SMOTEENN Sampling
+  * The balanced accuracy score is about 63%.
+  * The high_risk precision is still 1% only with 71% sensitivity which makes a F1 of only 2%.
+  * Due to the high number of false positives, the low_risk sensitivity is 55%.
