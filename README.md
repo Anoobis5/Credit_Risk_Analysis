@@ -26,12 +26,30 @@ When we examine the results of the balanced accuracy scores and the precision an
   * The high_risk precision is about 1% only with 66% sensitivity which makes a F1 of 2% only.
   * Due to the high number of low_risk populations, its precision is almost 100% with a sensitivity of 64%.
 
+
 ### Cluster Centroid Undersampling
   * The balanced accuracy score is down to about 51%.
   * The high_risk precision is still 1% only with 59% sensitivity which makes a F1 of 1%.
   * Due to the high number of false positives, the low_risk sensitivity is only 43%.
 
+
 ### SMOTEENN Sampling
   * The balanced accuracy score is about 63%.
   * The high_risk precision is still 1% only with 71% sensitivity which makes a F1 of only 2%.
   * Due to the high number of false positives, the low_risk sensitivity is 55%.
+
+
+### Balanced Random Forest Classifier
+  * The balanced accuracy score improved to about 67%.
+  * The high_risk precision is now high at 60% only with a 34% sensitivity.
+  * Due to a low  number of false positives, the low_risk sensitivity is now 100% with 100% presicion.
+
+
+### Easy Ensemble Classifying
+  * The balanced accuracy score is high to about 92%. 
+  * The high_risk precision is still low at 6% with 91% sensitivity which makes a F1 of only 14%.
+  * Due to a lower number of false positives, the low_risk sensitivity is now 94% with 100% presicion.
+
+
+
+## Project Summary
