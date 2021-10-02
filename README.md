@@ -21,7 +21,6 @@ When we examine the results of the balanced accuracy scores and the precision an
 
 
 ### SMOTE Oversampling
-  * Our results for this method are similar to the Naive Random Oversampling method.
   * The balanced accuracy score is about 65%
   * The high_risk precision is about 1% only with 66% sensitivity which makes a F1 of 2% only.
   * Due to the high number of low_risk populations, its precision is almost 100% with a sensitivity of 64%.
@@ -53,3 +52,7 @@ When we examine the results of the balanced accuracy scores and the precision an
 
 
 ## Project Summary
+
+Our analysis aims to find the best model that can detect if a loan is high risk or not. BIn order to do that, we need to find a model that lets the least amount of high risk loans pass through undetected. Our first four models oversamples, undersampled, and a combination of both to determin which is best at predicting which loans are the highest risks. The final two models we used ensemble classifiers to resample the data to try and determine wether loans are either high or low risk. 
+
+Ideally we want our models to display a good balance of recall and precision. That is why it is within our best interest to recommend using the ensemble classifiers over the other models. The Easy Ensemble Classifier model shows a high recall accuracy score of 92%. This would detect almost all high-risk cases. However, with a low precision of 6% with 91% sesnitivity, a lot of low risk credits are still falsely detected as high risk which would be detrimental to the bank's credit strategy. Based on our analyses, we would not be comfortable recomending any of these models to accurately predict credit risk.
