@@ -13,17 +13,18 @@ We were tasked to create a Supervised Machine Learning Model that could accurate
 ## Results
 
 When we examine the results of the balanced accuracy scores and the precision and the recall scores of each of the six machine learning methods, we were able to observe that: 
+F-Measure = (2 * Precision * Recall) / (Precision + Recall)
 
 #### Naive Random Oversampling: 
   * The balanced accuracy score is about 65%. 
-  * The high_risk precision is only 1% with a sensitivity of 73%.
+  * The high_risk precision is only 1% with a sensitivity of 73%
   * Due to the high number of low_risk populations, its precision is 100% with a sensitivity of 57%
 
 ![Oversampling](https://user-images.githubusercontent.com/84881187/135723187-cbf32adc-99be-42fc-9bf6-65bd285e1cb7.PNG)
 
 #### SMOTE Oversampling
   * The balanced accuracy score is about 66%
-  * The high_risk precision is about 1% only with a sensitivity of 78%
+  * The high_risk precision is about 1% only with a sensitivity of 78%.
   * Due to the high number of low_risk populations, its precision is almost 100%, but with a sensitivity of 54%
 ![SMOTE Method](https://user-images.githubusercontent.com/84881187/135723194-88769a36-7337-4d5b-8053-c54d322bf7ae.PNG)
 
@@ -62,4 +63,4 @@ When we examine the results of the balanced accuracy scores and the precision an
 
 Our analysis aims to find the best model that can detect if a loan is high risk or not. BIn order to do that, we need to find a model that lets the least amount of high risk loans pass through undetected. Our first four models oversamples, undersampled, and a combination of both to determin which is best at predicting which loans are the highest risks. The final two models we used ensemble classifiers to resample the data to try and determine wether loans are either high or low risk. 
 
-Ideally we want our models to display a good balance of recall and precision. That is why it is within our best interest to recommend using the ensemble classifiers over the other models. The Easy Ensemble Classifier model shows a high recall accuracy score of 92%. This would detect almost all high-risk cases. However, with a low precision of 6% with 91% sesnitivity, a lot of low risk credits are still falsely detected as high risk which would be detrimental to the bank's credit strategy. Based on our analyses, we would not be comfortable recomending any of these models to accurately predict credit risk.
+Ideally we want our models to display a good balance of recall and precision. That is why it is within our best interest to recommend using the ensemble classifiers over the other models. The Easy Ensemble Classifier model shows a high recall accuracy score of 93%. However, with a low precision of 9% with 92% sesnitivity, a lot of low risk credits are still falsely detected as high risk which would be detrimental to the bank's credit strategy. On the other-hand, using a Random Forest Classifier would give us an 88$ score when detecting high risk cases, but the sensitivity would drop to 37%. Based on our analyses, we would not be comfortable recomending any of these models to accurately predict credit risk.
