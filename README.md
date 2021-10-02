@@ -11,3 +11,10 @@ We were tasked to create a Supervised Machine Learning Model that could accurate
   6. Easy Ensemble Classifying
 
 ## Results
+
+When we examine the results of the balanced accuracy scores and the precision and the recall scores of each of the six machine learning methods, we were able to observe that: 
+
+### Naive Random Oversampling: 
+  * The balanced accuracy score is about 64%. 
+  * The high_risk precision is only 1% with a sensitivity of 62%, which makes an F1 of 2%.
+  * Due to the high number of low_risk populations, its precision is 100% with a sensitivity of 67%.
