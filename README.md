@@ -13,19 +13,18 @@ We were tasked to create a Supervised Machine Learning Model that could accurate
 ## Results
 
 When we examine the results of the balanced accuracy scores and the precision and the recall scores of each of the six machine learning methods, we were able to observe that: 
-F-Measure = (2 * Precision * Recall) / (Precision + Recall)
 
 #### Naive Random Oversampling: 
   * The balanced accuracy score is about 65%. 
   * The high_risk precision is only 1% with a sensitivity of 73%
-  * Due to the high number of low_risk populations, its precision is 100% with a sensitivity of 57%
+  * The low_risk precision is 100% with a sensitivity of 57%
 
 ![Oversampling](https://user-images.githubusercontent.com/84881187/135723187-cbf32adc-99be-42fc-9bf6-65bd285e1cb7.PNG)
 
 #### SMOTE Oversampling
   * The balanced accuracy score is about 66%
   * The high_risk precision is about 1% only with a sensitivity of 78%.
-  * Due to the high number of low_risk populations, its precision is almost 100%, but with a sensitivity of 54%
+  * The low_risk precision is almost 100%, but with a sensitivity of 54%
 ![SMOTE Method](https://user-images.githubusercontent.com/84881187/135723194-88769a36-7337-4d5b-8053-c54d322bf7ae.PNG)
 
 
