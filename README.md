@@ -21,6 +21,7 @@ When we examine the results of the balanced accuracy scores and the precision an
 
 ![Oversampling](https://user-images.githubusercontent.com/84881187/135723187-cbf32adc-99be-42fc-9bf6-65bd285e1cb7.PNG)
 
+
 #### SMOTE Oversampling
   * The balanced accuracy score is about 66%
   * The high_risk precision is about 1% only with a sensitivity of 78%.
